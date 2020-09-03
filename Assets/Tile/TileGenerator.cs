@@ -36,5 +36,7 @@ public class TileGenerator : MonoBehaviour {
     }
     void Start () {
         MakeHexGrid ();
+        Camera cam = Camera.main;
+        cam.orthographicSize = size * 1.5f + 1;
     }
 }
